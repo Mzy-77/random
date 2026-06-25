@@ -3,7 +3,7 @@
   "description": "A simple JWT authentication example using Node.js and Express.",
   "scripts": {
     "dev": "nodemon server.js",
-    "dev2": "nodemon server2.js"
+    "auth": "nodemon auth.js"
   },
   "dependencies": {
     "dotenv": "^17.4.2",

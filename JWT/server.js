@@ -19,8 +19,12 @@ const posts= [
 
 app.get("/api",  authenticateToken, (req, res) => {
     res.json(
-       posts.filter(post => post.username === req.user.name)
+    posts.filter(post => post.username === req.user.name)
     );
+})
+
+app.post("/token", (req, res) => {
+    const refreshToken = req.body.token;
 })
 
 app.post("/login", (req, res) => {
